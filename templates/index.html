@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="margin-left:50%;">SPAM DETECTOR</h2>
+    <div style="margin-left:50%;">
+        <form  action="/api/spamdetector" method="post">
+            <textarea name="mail" id="" cols="33" rows="10"></textarea>
+            <div ><input type="submit" value="Evalue"></div> 
+        </form>
+
+        {%if message%}
+        <h1>  PREDICTION :  </h1>
+            <p>{{message}}</p>
+        {%endif%}
+    </div>
+</body>
+</html>
